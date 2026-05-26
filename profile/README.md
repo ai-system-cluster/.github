@@ -19,7 +19,7 @@
 
 ## 关于我们
 
-一支专注于将大模型能力**落地到实际业务场景**的工程团队。目前重点服务 **ETC 高速公路电子收费**行业，并向更广泛的智能服务方向扩展。
+一支专注于将大模型能力**落地到实际业务场景**的工程团队，重点打磨 **智能客服 SaaS** 与 **AI 电销陪练** 两条产品线，并向更广泛的智能服务方向扩展。
 
 我们相信：好的 AI 产品不是炫技 demo，而是能稳定跑在生产环境、真正替企业降本增效的工程化系统。
 
@@ -39,8 +39,8 @@
 
 | 项目 | 状态 | 说明 |
 |------|:---:|------|
-| [`etc-ops`](https://github.com/ai-system-cluster/etc-ops) | Production | ETC 智能客服 SaaS + AI 电销陪练系统 |
-| `etc-bot` | Planning | 微信小程序后端 |
+| [`etc-ops`](https://github.com/ai-system-cluster/etc-ops) | Production | 智能客服 SaaS + AI 电销陪练系统 |
+| `etc-bot` | Planning | 渠道接入后端（小程序 / 公众号 / 企微） |
 | `etc-mobile` | Planning | 移动端 App |
 | `data-pipeline` | Planning | 业务数据治理与向量化中台 |
 
@@ -62,9 +62,9 @@
 
 ### 后端
 - Node.js (ES Modules)
-- Netlify Functions
+- Express + PM2
 - PostgreSQL + pgvector
-- Supabase (Auth / Realtime)
+- Nginx 反向代理
 
 </td>
 <td valign="top" width="33%">
@@ -72,7 +72,7 @@
 ### AI 与基础设施
 - 阿里 DashScope · Qwen-Plus
 - text-embedding-v3
-- Netlify · Self-hosted
+- Self-hosted Linux
 
 </td>
 </tr>
